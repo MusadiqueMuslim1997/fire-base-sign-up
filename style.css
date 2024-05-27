@@ -12,7 +12,7 @@
    
 } */
 body{
-    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    background-image: linear-gradient(90deg, #000000, #000000, #000000, #000000, #000000, #0b090a, #131113, #181719, #222327, #2b3135, #343f42, #4d5050);
 }
 header {
     width: 100%;
@@ -144,6 +144,9 @@ header {
     border: 1px solid silver;
     font-size: 1rem;
     font-weight: bolder;
+}
+.btn:active{
+    background-color: #ffa34d;
 }
 
 
