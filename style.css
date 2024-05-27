@@ -12,8 +12,7 @@
    
 } */
 body{
-    background-color: #d2a813;
-    background-image: linear-gradient(-90deg, #d2a813 0%, #000000 74%);
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
 }
 header {
     width: 100%;
@@ -163,5 +162,6 @@ header {
     }
     .box{
         width: 300px;
+        gap: 40px;
     }
 }
