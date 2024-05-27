@@ -3,8 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
+/* body{
+    background-image: url("images/sign.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+} */
 body{
-  background: linear-gradient(90deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
+    background-color: #d2a813;
+    background-image: linear-gradient(-90deg, #d2a813 0%, #000000 74%);
 }
 header {
     width: 100%;
