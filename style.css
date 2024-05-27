@@ -3,17 +3,19 @@
     padding: 0px;
     box-sizing: border-box;
 }
-/* body{
-    background-image: url("images/sign.png");
+
+body {
+    background-image: url("images/sign.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-   
-} */
-body{
-    background-image: linear-gradient(90deg, #000000, #000000, #000000, #000000, #000000, #0b090a, #131113, #181719, #222327, #2b3135, #343f42, #4d5050);
+
 }
+
+/* body{
+    background-image: linear-gradient(90deg, #000000, #000000, #000000, #000000, #000000, #0b090a, #131113, #181719, #222327, #2b3135, #343f42, #4d5050);
+} */
 header {
     width: 100%;
     padding: 10px 80px;
@@ -48,7 +50,7 @@ header {
 .main {
     width: 100%;
     margin-top: 45px;
- 
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +66,8 @@ header {
     gap: 70px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border: 1px solid silver;
+    border: 2px solid white;
+
 }
 
 .head {
@@ -76,7 +79,9 @@ header {
     font-size: 2rem;
     font-weight: bolder;
     font-family: cursive;
-    color: silver;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
 }
 
 .email {
@@ -86,7 +91,7 @@ header {
     justify-content: center;
     gap: 10px;
     font-size: 1.5rem;
-    color: silver;
+    color: white;
 
 }
 
@@ -94,11 +99,11 @@ header {
     width: 90%;
     height: 25px;
     border: none;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid white;
     background-color: transparent;
     padding: 15px 20px;
     font-size: 1rem;
-    color: silver;
+    color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -114,15 +119,15 @@ header {
     justify-content: center;
     gap: 10px;
     font-size: 1.5rem;
-    color: silver;
+    color: white;
 }
 
 .password>input {
     width: 90%;
     height: 25px;
     border: none;
-    border-bottom: 1px solid silver;
-    color: silver;
+    border-bottom: 1px solid white;
+    color: white;
     background-color: transparent;
     padding: 15px 20px;
     font-size: 1rem;
@@ -140,12 +145,13 @@ header {
     border: none;
     text-align: center;
     background-color: transparent;
-    color: silver;
-    border: 1px solid silver;
+    color: white;
+    border: 1px solid white;
     font-size: 1rem;
     font-weight: bolder;
 }
-.btn:active{
+
+.btn:active {
     background-color: #ffa34d;
 }
 
@@ -163,7 +169,8 @@ header {
     header {
         padding: 10px 40px;
     }
-    .box{
+
+    .box {
         width: 300px;
         gap: 40px;
     }
