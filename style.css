@@ -88,19 +88,21 @@ header {
 input::placeholder {
     color: white;
 }
+
 .boxes {
     width: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap:40px;
+    gap: 40px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border: 2px solid white;
     background: transparent;
 
 }
+
 .email {
     width: 100%;
     display: flex;
@@ -111,25 +113,28 @@ input::placeholder {
     color: white;
 
 }
-.emails{
+
+.emails {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
     font-size: 1rem;
-    color: white;   
+    color: white;
     border-bottom: 1px solid white;
+    font-weight: bolder;
 }
-.pro{
+
+.pro {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-   
-    font-size: 5rem;
-    color: white;   
-   
+
+    font-size: 4rem;
+    color: white;
+
 }
 
 .email>input {
@@ -192,6 +197,12 @@ input::placeholder {
     background-color: #ffa34d;
 }
 
+.btn1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -211,28 +222,38 @@ input::placeholder {
         width: 300px;
         gap: 40px;
     }
-    .pro{
+.boxes{
+    gap: 30px;
+}
+    .pro {
         font-size: 2.5rem;
     }
-    .btn{
+
+    .btn {
         font-size: 0.8rem;
     }
-    .head{
+
+    .head {
         font-size: 1.5rem;
     }
-    .email>input{
+
+    .email>input {
         font-size: 0.9rem;
     }
-    .password>input{
+
+    .password>input {
         font-size: 0.9rem;
     }
-.email{
-    font-size: 1.3rem;
-}
-.password{
-    font-size: 1.3rem;
-}
-.emails{
-    font-size: 0.8rem;
-}
+
+    .email {
+        font-size: 1.3rem;
+    }
+
+    .password {
+        font-size: 1.3rem;
+    }
+
+    .emails {
+        font-size: 0.8rem;
+    }
 }
