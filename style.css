@@ -220,5 +220,16 @@ input::placeholder {
     .head{
         font-size: 1.5rem;
     }
-
+    .email>input{
+        font-size: 0.9rem;
+    }
+    .password>input{
+        font-size: 0.9rem;
+    }
+.email{
+    font-size: 1.3rem;
+}
+.password{
+    font-size: 1.3rem;
+}
 }
