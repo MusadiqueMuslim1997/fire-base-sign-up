@@ -211,4 +211,14 @@ input::placeholder {
         width: 300px;
         gap: 40px;
     }
+    .pro{
+        font-size: 3rem;
+    }
+    .btn{
+        font-size: 0.8rem;
+    }
+    .head{
+        font-size: 1.5rem;
+    }
+
 }
