@@ -10,13 +10,24 @@ let log = () => {
         .then((userCredential) => {
 
             const user = userCredential.user;
+            swal({
+                title: "Congratulation!",
+                text: "Your account is created!",
+                icon: "success",
+                button: "Ok",
+              });
             window.location.assign('profile.html')
 
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            swal('Invalid Candidiate')
+            swal({
+                title: "Error",
+                text: "Invalid Candidiate!",
+                icon: "error",
+                button: "Ok",
+              });
         });
 }
 
