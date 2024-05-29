@@ -10,7 +10,12 @@ let register = () => {
 
     createUserWithEmailAndPassword(auth, signEmail.value, signpassword.value)
         .then((userCredential) => {
-
+            swal({
+                title: "Congratulation!",
+                text: "Your account is created!",
+                icon: "success",
+                button: "Ok",
+              });
             const user = userCredential.user;
             window.location.assign('login.html')
         })
@@ -18,7 +23,12 @@ let register = () => {
             const errorCode = error.code;
             const errorMessage = error.message;
             // ..
-            swal('error')
+            swal({
+                title: "Error",
+                text: "Try Again!",
+                icon: "error",
+                button: "Ok",
+              });
         });
 
 }
