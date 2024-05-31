@@ -215,6 +215,13 @@ input::placeholder {
     align-items: center;
     justify-content: center;
 }
+.em{
+    color: #0d6db7;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 

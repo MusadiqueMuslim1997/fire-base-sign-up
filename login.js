@@ -10,6 +10,7 @@ let log = () => {
         .then((userCredential) => {
 
             const user = userCredential.user;
+           
             swal({
                 title: "Congratulation!",
                 text: "Your account is created!",
@@ -33,3 +34,5 @@ let log = () => {
 
 let login = document.getElementById('login');
 login.addEventListener('click', log)
+
+
