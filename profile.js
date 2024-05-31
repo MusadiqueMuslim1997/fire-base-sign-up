@@ -24,7 +24,7 @@ onAuthStateChanged(auth, (user) => {
 function logout(){
    
     signOut(auth).then(() => {
-    window.location.assign('login.html')
+    window.location.assign('index.html')
     }).catch((error) => {
       swal('Something is wrong')
     });

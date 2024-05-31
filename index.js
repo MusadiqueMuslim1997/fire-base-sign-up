@@ -1,41 +1,42 @@
 
-
-import { auth, createUserWithEmailAndPassword } from './firebase.js';
-
-let register = () => {
-    let signEmail = document.getElementById('signEmail');
-    let signpassword = document.getElementById('signPassword');
-    console.log(signEmail.value, signpassword.value);
+import { auth, signInWithEmailAndPassword } from './firebase.js';
 
 
-    createUserWithEmailAndPassword(auth, signEmail.value, signpassword.value)
+let log = () => {
+    let logEmail = document.getElementById('logEmail');
+    let logPassword = document.getElementById('logPassword');
+
+    signInWithEmailAndPassword(auth, logEmail.value, logPassword.value)
         .then((userCredential) => {
-           
+
             const user = userCredential.user;
+           
             swal({
                 title: "Congratulation!",
                 text: "Your account is created!",
                 icon: "success",
                 button: "Ok",
               });
-            window.location.assign('login.html')
+            window.location.assign('profile.html')
+
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            // ..
             swal({
                 title: "Error",
-                text: "Try Again!",
+                text: "Invalid Candidiate!",
                 icon: "error",
                 button: "Ok",
               });
         });
-
 }
 
-let regBtn = document.getElementById('regBtn');
+let login = document.getElementById('login');
+login.addEventListener('click', log)
 
-regBtn.addEventListener('click', register)
-
-
+function created(){
+    window.location.assign('signup.html')
+}
+let create = document.getElementById('create');
+create.addEventListener('click', created)
