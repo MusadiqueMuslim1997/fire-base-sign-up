@@ -295,4 +295,7 @@ input::placeholder {
     .emails {
         font-size: 0.7rem;
     }
+    .logo{
+        width: 70px;
+    }
 }
