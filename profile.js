@@ -36,8 +36,7 @@ logot.addEventListener('click', logout)
 function verification(){
     sendEmailVerification(auth.currentUser)
   .then(() => {
-    // Email verification sent!
-    // ...
+    swal('Email verification link is sent')
   });
 }
 
