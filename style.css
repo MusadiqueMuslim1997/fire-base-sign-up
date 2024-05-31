@@ -261,6 +261,7 @@ input::placeholder {
 
     .boxes {
         gap: 30px;
+        padding: 20px 15px;
     }
 
     .pro {
