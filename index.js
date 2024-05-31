@@ -8,19 +8,20 @@ let log = () => {
 
     signInWithEmailAndPassword(auth, logEmail.value, logPassword.value)
         .then((userCredential) => {
-
+          
             const user = userCredential.user;
-           
             swal({
                 title: "Congratulation!",
-                text: "Your account is created!",
+                text: "You are Login seccessfully!",
                 icon: "success",
                 button: "Ok",
               });
+          
             window.location.assign('profile.html')
 
         })
         .catch((error) => {
+            
             const errorCode = error.code;
             const errorMessage = error.message;
             swal({
