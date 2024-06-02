@@ -7,9 +7,11 @@ onAuthStateChanged(auth, (user) => {
     email.innerHTML = user.email
     if (user.emailVerified == false) {
         password.innerHTML = 'Not Verify'
+        password.style.color = 'red';
     }
     else{
         password.innerHTML = 'Your email is verified'
+        password.style.color = 'darkgreen';
     }
 
     if (user) {
