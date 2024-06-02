@@ -24,12 +24,17 @@ let log = () => {
             
             const errorCode = error.code;
             const errorMessage = error.message;
-            swal({
+
+            if(logEmail.value == '' || logPassword.value == ''){
+                swal('Please Fill Input');
+            }
+            else{swal({
                 title: "Error",
                 text: "Invalid Candidiate!",
                 icon: "error",
                 button: "Ok",
               });
+            }
         });
 }
 

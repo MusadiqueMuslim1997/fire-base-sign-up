@@ -23,13 +23,21 @@ let register = () => {
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            // ..
+         
+         if(signEmail.value == '' || signpassword.value == ''){
+            swal('Please Fill Input')
+         }
+
+         else{
             swal({
                 title: "Error",
                 text: "Try Again!",
                 icon: "error",
                 button: "Ok",
               });
+         }
+            
+           
         });
 
 }
