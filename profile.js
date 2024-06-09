@@ -10,7 +10,7 @@ onAuthStateChanged(auth, (user) => {
         password.style.color = 'red';
     }
     else {
-        password.innerHTML = 'Your email is verified'
+        password.innerHTML = 'Your email has been verified'
         password.style.color = 'darkgreen';
     }
 
@@ -38,7 +38,7 @@ logot.addEventListener('click', logout)
 function verification() {
     sendEmailVerification(auth.currentUser)
         .then(() => {
-            swal('Email verification link is sent')
+            swal('Email verification link has been successfully sent')
         });
 }
 
@@ -51,7 +51,7 @@ function reset() {
     let user = auth.currentUser
     sendPasswordResetEmail(auth, user.email)
         .then(() => {
-            swal('Password reset email has been sent')
+            swal('Your Reset Password Email Link has been successfully Sent')
         })
         .catch((error) => {
             const errorCode = error.code;
