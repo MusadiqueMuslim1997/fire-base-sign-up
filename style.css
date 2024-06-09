@@ -228,12 +228,19 @@ input::placeholder {
     text-align: center;
     background-color: transparent;
     color: white;
-    background-color: darkgreen;
+    background-color: green;
     font-size: 0.8rem;
    
 }
 
-
+.bt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 
 
