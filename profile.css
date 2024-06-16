@@ -60,9 +60,9 @@ header {
     padding: 40px;
 }
 
-.box{
+.box {
     width: 450px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,9 +73,10 @@ header {
     border-top: 1px solid #0d6db7;
     border-bottom: 1px solid #0d6db7;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    
+
 }
-.head{
+
+.head {
     width: 100%;
     display: flex;
     align-items: center;
@@ -84,7 +85,8 @@ header {
     font-family: cursive;
     color: #0d6db7;
 }
-.icn{
+
+.icn {
     width: 100%;
     display: flex;
     align-items: center;
@@ -92,17 +94,19 @@ header {
     font-size: 3rem;
     color: #0d6db7;
 }
-.email{
+
+.email {
     width: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     font-size: 1rem;
-    color: gray; 
+    color: gray;
     border-bottom: 1px solid #0d6db7;
     padding: 10px;
 }
-.main-btn{
+
+.main-btn {
     width: 100%;
     display: flex;
     align-items: center;
@@ -110,13 +114,15 @@ header {
     flex-wrap: wrap;
     gap: 10px;
 }
-.btn{
+
+.btn {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.btn > button{
+
+.btn>button {
     border: none;
     background-color: white;
     color: #0d6db7;
@@ -124,7 +130,44 @@ header {
     cursor: pointer;
     border: 1px solid #0d6db7;
 }
-.btn > button:active{
+
+.btn>button:active {
     background-color: #0d6db7;
     color: white;
+}
+
+
+@media screen and (max-width:500px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    .main {
+        padding: 40px;
+    }
+
+    .box {
+        width: 300px;
+        gap: 20px;
+    }
+
+    .head {
+        font-size: 1.5rem;
+    }
+
+    .icn {
+        font-size: 2.5rem;
+    }
+
+    .email {
+        font-size: 0.8rem;
+    }
+
+    .btn>button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    .logo {
+        width: 70px;
+    }
 }

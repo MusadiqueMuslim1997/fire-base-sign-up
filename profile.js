@@ -5,6 +5,7 @@ onAuthStateChanged(auth, (user) => {
     let email = document.getElementById('email');
     let password = document.getElementById('password');
     email.innerHTML = user.email
+    email.style.color = 'green'
     if (user.emailVerified == false) {
         password.innerHTML = 'Not Verify'
         password.style.color = 'red';
