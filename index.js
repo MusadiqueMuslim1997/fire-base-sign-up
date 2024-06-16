@@ -8,32 +8,33 @@ let log = () => {
 
     signInWithEmailAndPassword(auth, logEmail.value, logPassword.value)
         .then((userCredential) => {
-          
+
             const user = userCredential.user;
             swal({
                 title: "Congratulation!",
                 text: "You are Login seccessfully!",
                 icon: "success",
                 button: "Ok",
-              });
-          
+            });
+
             window.location.assign('profile.html')
 
         })
         .catch((error) => {
-            
+
             const errorCode = error.code;
             const errorMessage = error.message;
 
-            if(logEmail.value == '' || logPassword.value == ''){
+            if (logEmail.value == '' || logPassword.value == '') {
                 swal('Please Fill Input');
             }
-            else{swal({
-                title: "Error",
-                text: "Invalid Candidiate!",
-                icon: "error",
-                button: "Ok",
-              });
+            else {
+                swal({
+                    title: "Error",
+                    text: "Invalid Candidiate!",
+                    icon: "error",
+                    button: "Ok",
+                });
             }
         });
 }
@@ -41,7 +42,7 @@ let log = () => {
 let login = document.getElementById('login');
 login.addEventListener('click', log)
 
-function created(){
+function created() {
     window.location.assign('signup.html')
 }
 let create = document.getElementById('create');
